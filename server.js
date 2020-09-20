@@ -2,17 +2,17 @@ const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
 const connectDB = require('./config/db')
-const path = require('path')
+
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const dotenv = require('dotenv')
+require('dotenv').config()
 
 
 
 const app = express()
 
 //connect to db
-dotenv.config({path: './config/config.env'});
+
 
 //connect to db
 connectDB()
